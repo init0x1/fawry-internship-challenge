@@ -18,4 +18,9 @@ public class CartItem {
     public int getQuantity(){
         return quantity;
     }
+
+    public double getTotalPrice(){
+        return product.getPrice() * quantity;
+    }
+
 }
