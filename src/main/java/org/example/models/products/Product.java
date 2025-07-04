@@ -41,6 +41,12 @@ public abstract class Product {
         return quantity >= requestedQuantity;
     }
 
+    public void reduceQuantity(int amount) {
+        if (amount <= quantity) {
+            quantity -= amount;
+        }
+    }
+
     public abstract boolean isExpired();
     public abstract boolean requiresShipping();
 
