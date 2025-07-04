@@ -25,4 +25,13 @@ public class Customer {
         this.balance = balance;
     }
 
+    public boolean hasEnoughBalance(double amount) {
+        return balance >= amount;
+    }
+
+    public void deductBalance(double amount) {
+        if (hasEnoughBalance(amount)) {
+            balance -= amount;
+        }
+    }
 }
