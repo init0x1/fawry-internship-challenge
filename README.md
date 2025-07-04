@@ -22,27 +22,10 @@ The system supports different types of products (physical, digital, expirable), 
 - **Error Handling:**  
   - Handles empty cart, insufficient balance, out-of-stock, and expired products
 
-## Project Structure
-
+## How to Run
+1. Clone the repository.
+```bash
+git clone https://github.com/init0x1/fawry-internship-challenge
 ```
-src/
-  main/
-    java/
-      org/
-        example/
-          Main.java
-          interfaces/
-            Shippable.java
-          models/
-            CartItem.java
-            Customer.java
-            products/
-              Product.java
-              PhysicalProduct.java
-              DigitalProduct.java
-              ExpirableProduct.java
-          services/
-            Cart.java
-            CheckoutService.java
-            ShippingService.java
-```
+2. Open the project in IntelliJ IDEA or any Java IDE.
+3. Run the `Main` class.
