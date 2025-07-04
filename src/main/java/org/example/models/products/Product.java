@@ -37,6 +37,10 @@ public abstract class Product {
         this.quantity = quantity;
     }
 
+    public boolean isAvailable(int requestedQuantity){
+        return quantity >= requestedQuantity;
+    }
+
     public abstract boolean isExpired();
     public abstract boolean requiresShipping();
 
